@@ -1,0 +1,5 @@
+set(PROJECT_NAME raylib-snake)
+set(PROJECT_SOURCES src/main.cpp)
+add_executable(${PROJECT_NAME} ${PROJECT_SOURCES})
+set(raylib_VERBOSE ON)
+target_link_libraries(${PROJECT_NAME} PUBLIC raylib raylib-cpp)
